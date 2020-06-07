@@ -14,10 +14,18 @@
 
 ### MODULES
 
+First we import necessary modules and libraries
+
++ We use **__future__** to tell interpreter that this function is compatible with both feature and past versions of python.
++ To _encode_ our url we use **urlencode**
++ To _open_ our url we use **urlopen**
++ To access python _context manager_ we use **contextlib**
++ To access system arguments we use **sys**
+
 ```python
 from  __future__  import with_statement
 from urllib.parse import urlencode
 from urllib.request import urlopen
 import contextlib
 import sys
-```  
+```
